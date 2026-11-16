@@ -33,7 +33,10 @@ Built 100% with native Apple technologies (**Swift, SwiftUI, and AppKit**), MacF
 
 ## ✨ Key Features
 
-- **Full Fan Control:**
+- **Custom Temperature Curves (Sensor-Based):**
+  - Bind fan behavior directly to any specific thermal sensor (such as **CPU Performance Cores**, GPU, or SoC).
+  - Define custom minimum and maximum temperature thresholds (e.g., **58°C to 95°C**): fans stay quiet below the lower threshold, ramp up smoothly as temperature rises, and reach maximum RPM at the upper limit.
+- **Full Manual & Preset Fan Control:**
   - Continuous real-time fan speed (RPM) adjustment.
   - Quick presets: Minimum, 50%, 75%, and Maximum speed.
   - Instant return to macOS-managed **Automatic** control.
@@ -46,7 +49,7 @@ Built 100% with native Apple technologies (**Swift, SwiftUI, and AppKit**), MacF
   - Closing the main window keeps the app running silently in the background via the Menu Bar.
   - Full support for macOS Light and Dark modes.
 - **Universal Binary:**
-  - 100% native execution on both **Apple Silicon (M1–M4)** and **Intel** processors.
+  - 100% native execution on both **Apple Silicon (M1–M6)** and **Intel** processors.
 
 ---
 
@@ -76,18 +79,18 @@ Because MacFan Pro is independent software distributed outside the Mac App Store
 
 - **Operating System:** macOS 13.0 (Ventura) or later.
 - **Supported Hardware:**
-  - **Apple Silicon:** MacBook Pro, Mac mini, iMac, Mac Studio, Mac Pro (M1–M4 and Pro/Max/Ultra variants). *(Note: **MacBook Air** models with Apple Silicon do not have physical fans; on these Macs, the app operates strictly as a thermal monitor).*
+  - **Apple Silicon:** MacBook Pro, Mac mini, iMac, Mac Studio, Mac Pro (M1–M6 and Pro/Max/Ultra variants). *(Note: **MacBook Air** models with Apple Silicon do not have physical fans; on these Macs, the app operates strictly as a thermal monitor).*
   - **Intel:** Any 64-bit Intel Mac compatible with macOS 13+.
 
 ---
 
 ## ❓ Frequently Asked Questions
 
-**Is it safe to manually adjust fan speeds?**
-Yes. MacFan Pro respects the safe minimum and maximum limits defined by Apple's firmware (SMC). You can also switch back to **Automatic** mode with a single click at any time.
+**Is it safe to manually adjust fan speeds or set temperature curves?**
+Yes. MacFan Pro respects the safe minimum and maximum RPM limits defined by Apple's firmware (SMC). You can also switch back to **Automatic** mode with a single click at any time.
 
 **Does the main window need to stay open for the app to work?**
-No. You can close the main window (`⌘W`) and MacFan Pro will continue maintaining your selected fan speed profile and displaying live metrics in the Menu Bar.
+No. You can close the main window (`⌘W`) and MacFan Pro will continue maintaining your active fan curve or speed profile and displaying live metrics in the Menu Bar.
 
 ---
 
